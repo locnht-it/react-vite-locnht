@@ -5,6 +5,8 @@ const TodoData = (props) => {
   //     age: 22,
   //     data: {}
   //   }
+
+  // destructuring object
   const { name, age, data } = props;
   console.log(`>>> Check props: `, props);
   return (
@@ -12,6 +14,7 @@ const TodoData = (props) => {
       <div>My name is {name}</div>
       <div>Learning React</div>
       <div>Watching Youtube</div>
+      <div>{JSON.stringify(props.todoList)}</div>
     </div>
   );
 };
